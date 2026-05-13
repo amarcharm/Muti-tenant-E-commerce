@@ -8,4 +8,4 @@ const storeSchema = new mongoose.Schema({
   isApproved:  { type: Boolean, default: false },
 }, { timestamps: true });
 
-module.exports = mongoose.model('Store', storeSchema);
+module.exports = mongoose.model('store', storeSchema);
