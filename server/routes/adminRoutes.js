@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const {verifyToken, authorizaRoles} = require('../middleware/authMiddleware')
+const {verifyToken, authorizeRoles} = require('../middleware/authMiddleware')
 
 
 router.get('/dashboard', verifyToken, authorizeRoles('superadmin'),(req,res) => {
